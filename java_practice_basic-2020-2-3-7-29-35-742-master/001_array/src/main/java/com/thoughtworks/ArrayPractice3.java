@@ -1,10 +1,11 @@
 package com.thoughtworks;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class ArrayPractice3 {
     public static int[] filterZero(int[] array) {
-        ArrayList<Integer> newArray = new ArrayList<Integer>();
+        List<Integer> newArray = new ArrayList<Integer>();
 
         int num = 0;
         for (int i = 0; i < array.length; i++) {
