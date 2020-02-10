@@ -4,20 +4,23 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ArrayPractice4 {
+    public static void main(String[] args) {
+        insert(2);
+    }
     public static int[] insert(int number) {
         int[] array = new int[]{1, 20, 50, 100};
         List<Integer> newArray = new ArrayList<Integer>();
 
-        boolean flag = true;
+        boolean isInsert = true;
         for (int i = 0; i < array.length; i++) {
-            if(flag && number <= array[i]) {
+            if(isInsert && number <= array[i]) {
                 newArray.add(number);
-                flag = false;
+                isInsert = false;
             }
             newArray.add(array[i]);
         }
 
-        if(flag) {
+        if(isInsert) {
             newArray.add(number);
         }
 
